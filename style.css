@@ -1,0 +1,176 @@
+.keyVisual{
+  text-align: center;
+}
+
+
+.headerInner,.mainInner{
+  max-width: 650px;
+  margin: auto;
+  padding: 0 20px;
+  border-spacing: 0;
+}
+
+.contactButton{
+  background: skyblue;
+  color: #fff;
+  width:100px;
+  height: 40px;
+  display:inline-block;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 13px;
+  transition: 700ms;
+}
+/*ホバーはa要素に対して*/
+.contactButton:hover{
+  background-color: orange ;
+}
+
+/* お問合せフォーム全体 */
+
+main h1 {
+  text-align: center;
+}
+
+.contactForm{
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 20px;
+  /* これしないと下線部が繋がらない↓ */
+   border-spacing: 0;
+}
+
+.contactForm th,td{
+  padding: 2rem 0;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.contactForm th{
+  text-align: left;
+  color: rgb(109, 109, 109);
+}
+
+input[type="text"],textarea{
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  box-shadow: none;
+  min-height: 1rem;
+  padding:10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="text"]::placeholder{
+  color: #aaa;
+  transition: 300ms;
+}
+
+/* input[type="text"]:focus,
+textarea:focus{
+  border-color: #41487e;
+  outline: 0;
+} */
+
+input[type="text"]::placeholder{
+  transition: 300ms;
+}
+
+input[type="text"]:focus::placeholder{
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+input[type="radio"]{
+  text-align: left;
+  padding-left: 0;
+  width: 4%;
+}
+
+input[type="checkbox"] + label{
+  padding-left: 25px;
+  position: relative;
+}
+
+.text-center{
+  text-align: center;
+  padding:15px;
+}
+
+input[type="submit"]{
+  border-style:none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  background: #41487e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+input[type="submit"]:hover{
+  background: #1f275e;
+}
+
+h2{
+  background-image: url(niconico_bg_blue.png);
+  line-height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.headerInner{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutWrapper img{
+  float:left;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* section img{ 
+  float:right;
+}*/
+
+.priceWrapper table,
+.priceWrapper th,
+.priceWrapper td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.priceWrapper th,
+.priceWrapper td{
+    padding: 7px;
+}
+
+.priceWrapper table{
+    width: 100%;
+}
+
+.priceWrapper th{
+    width: 150px;
+    background: #eee;
+}
+
+footer{
+  background: #eeeeee;
+}
+
+.footerInner{
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+}
